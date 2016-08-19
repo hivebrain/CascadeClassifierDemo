@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		075A9C461D67A77A00C7D8EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 075A9C451D67A77A00C7D8EA /* main.m */; };
+		075A9C491D67A77A00C7D8EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075A9C481D67A77A00C7D8EA /* AppDelegate.m */; };
+		075A9C4C1D67A77A00C7D8EA /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 075A9C4B1D67A77A00C7D8EA /* ViewController.mm */; };
+		075A9C4F1D67A77A00C7D8EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075A9C4D1D67A77A00C7D8EA /* Main.storyboard */; };
+		075A9C511D67A77A00C7D8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075A9C501D67A77A00C7D8EA /* Assets.xcassets */; };
+		075A9C541D67A77A00C7D8EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075A9C521D67A77A00C7D8EA /* LaunchScreen.storyboard */; };
+		075A9C601D67AB2B00C7D8EA /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 075A9C5B1D67AB2B00C7D8EA /* haarcascade_eye_tree_eyeglasses.xml */; };
+		075A9C611D67AB2B00C7D8EA /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 075A9C5C1D67AB2B00C7D8EA /* haarcascade_eye.xml */; };
+		075A9C621D67AB2B00C7D8EA /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 075A9C5D1D67AB2B00C7D8EA /* haarcascade_frontalface_default.xml */; };
+		075A9C631D67AB2B00C7D8EA /* haarcascade_mcs_mouth.xml in Resources */ = {isa = PBXBuildFile; fileRef = 075A9C5E1D67AB2B00C7D8EA /* haarcascade_mcs_mouth.xml */; };
+		075A9C641D67AB2B00C7D8EA /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 075A9C5F1D67AB2B00C7D8EA /* haarcascade_smile.xml */; };
+		84CF146DF1F6B4CD5393BB32 /* libPods-CascadeClassifierExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A69EA9AABEBDDCB536AFF1B7 /* libPods-CascadeClassifierExample.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		075A9C411D67A77A00C7D8EA /* CascadeClassifierExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CascadeClassifierExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		075A9C451D67A77A00C7D8EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		075A9C471D67A77A00C7D8EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		075A9C481D67A77A00C7D8EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		075A9C4A1D67A77A00C7D8EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		075A9C4B1D67A77A00C7D8EA /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		075A9C4E1D67A77A00C7D8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		075A9C501D67A77A00C7D8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		075A9C531D67A77A00C7D8EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		075A9C551D67A77A00C7D8EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075A9C5B1D67AB2B00C7D8EA /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		075A9C5C1D67AB2B00C7D8EA /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
+		075A9C5D1D67AB2B00C7D8EA /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		075A9C5E1D67AB2B00C7D8EA /* haarcascade_mcs_mouth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_mouth.xml; sourceTree = "<group>"; };
+		075A9C5F1D67AB2B00C7D8EA /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
+		91816D2F6F704764A0513174 /* Pods-CascadeClassifierExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CascadeClassifierExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-CascadeClassifierExample/Pods-CascadeClassifierExample.release.xcconfig"; sourceTree = "<group>"; };
+		A69EA9AABEBDDCB536AFF1B7 /* libPods-CascadeClassifierExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CascadeClassifierExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73676B91507AC7E93D7F2D1 /* Pods-CascadeClassifierExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CascadeClassifierExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CascadeClassifierExample/Pods-CascadeClassifierExample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		075A9C3E1D67A77A00C7D8EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84CF146DF1F6B4CD5393BB32 /* libPods-CascadeClassifierExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		075A9C381D67A77A00C7D8EA = {
+			isa = PBXGroup;
+			children = (
+				075A9C431D67A77A00C7D8EA /* CascadeClassifierExample */,
+				075A9C421D67A77A00C7D8EA /* Products */,
+				EFAFFCBC49924A344897A099 /* Pods */,
+				98B0DC3CA638AB03D17A7895 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		075A9C421D67A77A00C7D8EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				075A9C411D67A77A00C7D8EA /* CascadeClassifierExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		075A9C431D67A77A00C7D8EA /* CascadeClassifierExample */ = {
+			isa = PBXGroup;
+			children = (
+				075A9C5B1D67AB2B00C7D8EA /* haarcascade_eye_tree_eyeglasses.xml */,
+				075A9C5C1D67AB2B00C7D8EA /* haarcascade_eye.xml */,
+				075A9C5D1D67AB2B00C7D8EA /* haarcascade_frontalface_default.xml */,
+				075A9C5E1D67AB2B00C7D8EA /* haarcascade_mcs_mouth.xml */,
+				075A9C5F1D67AB2B00C7D8EA /* haarcascade_smile.xml */,
+				075A9C471D67A77A00C7D8EA /* AppDelegate.h */,
+				075A9C481D67A77A00C7D8EA /* AppDelegate.m */,
+				075A9C4A1D67A77A00C7D8EA /* ViewController.h */,
+				075A9C4B1D67A77A00C7D8EA /* ViewController.mm */,
+				075A9C4D1D67A77A00C7D8EA /* Main.storyboard */,
+				075A9C501D67A77A00C7D8EA /* Assets.xcassets */,
+				075A9C521D67A77A00C7D8EA /* LaunchScreen.storyboard */,
+				075A9C551D67A77A00C7D8EA /* Info.plist */,
+				075A9C441D67A77A00C7D8EA /* Supporting Files */,
+			);
+			path = CascadeClassifierExample;
+			sourceTree = "<group>";
+		};
+		075A9C441D67A77A00C7D8EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				075A9C451D67A77A00C7D8EA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98B0DC3CA638AB03D17A7895 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A69EA9AABEBDDCB536AFF1B7 /* libPods-CascadeClassifierExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFAFFCBC49924A344897A099 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A73676B91507AC7E93D7F2D1 /* Pods-CascadeClassifierExample.debug.xcconfig */,
+				91816D2F6F704764A0513174 /* Pods-CascadeClassifierExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		075A9C401D67A77A00C7D8EA /* CascadeClassifierExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075A9C581D67A77A00C7D8EA /* Build configuration list for PBXNativeTarget "CascadeClassifierExample" */;
+			buildPhases = (
+				1E8287EBCBE553D40B618380 /* [CP] Check Pods Manifest.lock */,
+				075A9C3D1D67A77A00C7D8EA /* Sources */,
+				075A9C3E1D67A77A00C7D8EA /* Frameworks */,
+				075A9C3F1D67A77A00C7D8EA /* Resources */,
+				DE6A0C999EA56CC4B2E6D776 /* [CP] Embed Pods Frameworks */,
+				618C9068852C6082A9658023 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CascadeClassifierExample;
+			productName = CascadeClassifierExample;
+			productReference = 075A9C411D67A77A00C7D8EA /* CascadeClassifierExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		075A9C391D67A77A00C7D8EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Hive Brain, Inc.";
+				TargetAttributes = {
+					075A9C401D67A77A00C7D8EA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 075A9C3C1D67A77A00C7D8EA /* Build configuration list for PBXProject "CascadeClassifierExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 075A9C381D67A77A00C7D8EA;
+			productRefGroup = 075A9C421D67A77A00C7D8EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				075A9C401D67A77A00C7D8EA /* CascadeClassifierExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		075A9C3F1D67A77A00C7D8EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075A9C631D67AB2B00C7D8EA /* haarcascade_mcs_mouth.xml in Resources */,
+				075A9C541D67A77A00C7D8EA /* LaunchScreen.storyboard in Resources */,
+				075A9C511D67A77A00C7D8EA /* Assets.xcassets in Resources */,
+				075A9C4F1D67A77A00C7D8EA /* Main.storyboard in Resources */,
+				075A9C611D67AB2B00C7D8EA /* haarcascade_eye.xml in Resources */,
+				075A9C641D67AB2B00C7D8EA /* haarcascade_smile.xml in Resources */,
+				075A9C621D67AB2B00C7D8EA /* haarcascade_frontalface_default.xml in Resources */,
+				075A9C601D67AB2B00C7D8EA /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E8287EBCBE553D40B618380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		618C9068852C6082A9658023 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CascadeClassifierExample/Pods-CascadeClassifierExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6A0C999EA56CC4B2E6D776 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CascadeClassifierExample/Pods-CascadeClassifierExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		075A9C3D1D67A77A00C7D8EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075A9C4C1D67A77A00C7D8EA /* ViewController.mm in Sources */,
+				075A9C491D67A77A00C7D8EA /* AppDelegate.m in Sources */,
+				075A9C461D67A77A00C7D8EA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		075A9C4D1D67A77A00C7D8EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075A9C4E1D67A77A00C7D8EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		075A9C521D67A77A00C7D8EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075A9C531D67A77A00C7D8EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		075A9C561D67A77A00C7D8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		075A9C571D67A77A00C7D8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		075A9C591D67A77A00C7D8EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73676B91507AC7E93D7F2D1 /* Pods-CascadeClassifierExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CascadeClassifierExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hivebrain.CascadeClassifierExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		075A9C5A1D67A77A00C7D8EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91816D2F6F704764A0513174 /* Pods-CascadeClassifierExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CascadeClassifierExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hivebrain.CascadeClassifierExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		075A9C3C1D67A77A00C7D8EA /* Build configuration list for PBXProject "CascadeClassifierExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075A9C561D67A77A00C7D8EA /* Debug */,
+				075A9C571D67A77A00C7D8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		075A9C581D67A77A00C7D8EA /* Build configuration list for PBXNativeTarget "CascadeClassifierExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075A9C591D67A77A00C7D8EA /* Debug */,
+				075A9C5A1D67A77A00C7D8EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 075A9C391D67A77A00C7D8EA /* Project object */;
+}
